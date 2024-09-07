@@ -529,7 +529,7 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-1">
           <Button title={t('github')} variant="ghost" size="icon" className="h-8 w-8">
-            <Github className="h-5 w-5" onClick={() => window.open('https://github.com/The-UnknownHacker/GhostAI-v3')} />
+            <Github className="h-5 w-5" onClick={() => window.open('https://github.com/heyitsleo/airepo')} />
           </Button>
           <ThemeToggle />
           <Button

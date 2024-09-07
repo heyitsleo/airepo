@@ -13,8 +13,8 @@ const HEAD_SCRIPTS = process.env.HEAD_SCRIPTS as string;
 const ENABLE_PROTECT = !isUndefined(process.env.ACCESS_PASSWORD);
 
 export const metadata: Metadata = {
-  title: 'GhostAI',
-  description: 'GhostAI',
+  title: 'Gemini',
+  description: 'Gemini',
   keywords: ['Gemini', 'Gemini Pro', 'Gemini Chat', 'AI', 'voice'],
   icons: {
     icon: {
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <head>
           {HEAD_SCRIPTS ? <Script id="headscript">{HEAD_SCRIPTS}</Script> : null}
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-          <title>GhostAI</title>
+          <title>Gemini</title>
         </head>
         <body>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <I18Provider>
                 <SignedOut>
                   <div style={signedOutStyle}>
-                    <h1 style={welcomeTextStyle}>Welcome To GhostAI</h1>
+                    <h1 style={welcomeTextStyle}>Welcome</h1>
                     <SignInButton>
                       <button style={signInButtonStyle}>Login to continue</button>
                     </SignInButton>
